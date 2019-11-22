@@ -178,6 +178,11 @@ nav .navbar {
   width: 200px;
   border-radius: 50px;
 }
+@media (max-width: 500px) {
+  .wrapper header .profilepic {
+    display: none;
+  }
+}
 .wrapper header h1 {
   font-size: 3rem;
 }
@@ -212,15 +217,11 @@ nav .navbar {
 }
 .wrapper .skills ul {
   list-style-type: circle;
-}
-.wrapper .skills ul li {
   color: #888;
 }
-.wrapper .skills ul li ul {
+.wrapper .skills ul ul {
   list-style-type: square;
-}
-.wrapper .skills ul li ul li {
-  color: #666;
+  padding-left: 2.5%;
 }
 .wrapper .contact-form {
   border: 1px solid black;
