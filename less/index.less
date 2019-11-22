@@ -57,3 +57,139 @@ html, body {
     height: 100%;
 }
 
+/* Reset fin */
+
+/* Navbar */
+
+.links {
+	text-decoration: none;
+}
+
+.textsize {
+	font-size: 1.1rem;
+}
+
+.border {
+	border: 1px solid black;
+	padding: 2.5%;
+	margin-bottom: 2.5%;
+}
+
+nav {
+	display: flex;
+	flex: 1;
+	justify-content: space-around;
+	padding: 10px;
+	margin: 20px auto;
+
+	.navbar {
+		color: black;
+		font-size: .9em;
+		.links();
+	
+
+		@media (max-width: 500px) {
+			width: 100%;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+
+.wrapper {
+	width: 90%;
+	margin: 20px auto;
+
+	header {
+		text-align: center;
+		padding: 5%;
+
+		.profilepic {
+			height: 200px;
+			width: 200px;
+			border-radius: 50px;
+		}
+
+		h1 {
+			font-size: 3rem;
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+	}
+
+	.about-me {
+		.border();
+		.textsize();
+	}
+
+	.experience {
+		.border();
+
+		h2 {
+			margin-bottom: 2.5%;
+			font-size: 1.5rem;
+		}
+
+		.exp-content {
+			margin-bottom: 2.5%;
+			h3 {
+				font-size: 1.3rem;
+			}
+		}
+	}
+
+	.skills {
+		.border();
+
+		ul {
+			list-style-type: circle;
+			color: #888;
+				ul {
+					list-style-type: square;
+				}
+			}
+
+		}
+
+	}
+
+	.contact-form {
+		.border();
+		.textsize();
+
+		input[type=text], select, textarea {
+			width: 100%; 
+			padding: 15px; 
+			border: 1px solid #888; 
+			border-radius: 4px; 
+			margin: 15px 0px;
+			resize: vertical;
+		  }
+		  
+		  input[type=submit] {
+			background-color: white;
+			color: black;
+			padding: 1% 5%;
+			border: 1px solid black;
+			border-radius: 4px;
+			cursor: pointer;
+			margin: 0 auto;
+			font-size: 1em;
+		  
+		
+			:hover {
+				transition: background .5s;
+				background-color: black;
+				color: white;
+			}
+		}
+	}
+
+	footer {
+		padding: 20px;
+		text-align: center;
+		.textsize();
+	}
+}
