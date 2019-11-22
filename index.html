@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>My Resume</title>
+  <title>Abhit Sahota</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -14,6 +14,71 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <nav>
+    <a href="#" class="navbar">Home</a>
+    <a href="#" class="navbar">About</a>
+    <a href="#" class="navbar">Portfolio</a>
+    <a href="#" class="navbar">Contact</a>
+  </nav>
+  <div class="wrapper">
+    <header>
+      <img class="profilepic" src="img/profile.jpg" alt="profile picture"/>
+      <h1>Abhit Sahota</h1>
+      <p class="title">Managment Consultant</p>
+      <p class="location">Toronto, Canada + the Internet</p>
+    </header>
+
+    <main>
+      <section class="about-me">
+        <p>Over the course of his career, Abhit has founded a digital health software company and an e-commerce store, backpacked throughout Southeast Asia, worked for the world's leading technology consultancy firm, and completed an independent blockchain research project. Going forward, he looks to document his thoughts on industry phenomenon, travel Inner Asia, and run his first marathon in 2019. </p>
+      </section>
+
+      <section class="experience">
+        <h2>Work experience</h2>
+          <div class="exp-content exp1">
+            <h3>Accenture, 2018 - Present</h3>
+            <p class="exp-desc">I help clients navigate digital transformations and embed customer-centricity across their organization.
+                <br>Project focus areas are omni-channel marketing, analytics, and product management.</p>
+          </div>
+          <div class="exp-content exp2">
+            <h3>Tandem, 2016 - 2018</h3>
+            <p class="exp-desc">Tandem is a digital treatment tool that supports the therapist-client relationship. By digitizing therapy homework and tracking clients' data, Tandem helps clients stay more engaged in their therapy and provides data assisted solutions for therapists to improve treatment.</p>
+          </div>
+      </section>
+
+      <section class="skills">
+        <div class="skills-list">
+          <ul>
+            <li>Executive-level communication design</li>
+            <li>Product management</li>
+            <li>Business and marketing analytics</li>
+            <li>Programming</li>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>LESS</li>
+              </ul>
+          </ul>
+
+        </div>
+      </section>
+      <section class="contact-form">
+          <form>
+              <label for="nameinfo">Your Name</label>
+                  <input type="text" id="nameinfo" name="nameinfo">
+              <br>
+              <label for="subject">Comments:</label>
+              <br>
+              <textarea id="subject" name="subject" rows="4">Love to hear from you! :) </textarea>
+              <br>
+              <input type="submit" value="Send">
+          </form>    
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Abhit Sahota. 2019.</p>
+    </footer>
+  </div>
+
 </body>
 </html>

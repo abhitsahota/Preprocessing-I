@@ -1,1 +1,261 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Reset fin */
+/* Navbar */
+.links {
+  text-decoration: none;
+}
+.textsize {
+  font-size: 1.1rem;
+}
+.border {
+  border: 1px solid black;
+  padding: 2.5%;
+  margin-bottom: 2.5%;
+}
+nav {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 20px auto;
+}
+nav .navbar {
+  color: black;
+  font-size: 0.9em;
+  text-decoration: none;
+}
+@media (max-width: 500px) {
+  nav .navbar {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+.wrapper {
+  width: 90%;
+  margin: 20px auto;
+}
+.wrapper header {
+  text-align: center;
+  padding: 5%;
+}
+.wrapper header .profilepic {
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+}
+@media (max-width: 500px) {
+  .wrapper header .profilepic {
+    display: none;
+  }
+}
+.wrapper header h1 {
+  font-size: 3rem;
+}
+.wrapper header p {
+  font-size: 1.5rem;
+}
+.wrapper .about-me {
+  border: 1px solid black;
+  padding: 2.5%;
+  margin-bottom: 2.5%;
+  font-size: 1.1rem;
+}
+.wrapper .experience {
+  border: 1px solid black;
+  padding: 2.5%;
+  margin-bottom: 2.5%;
+}
+.wrapper .experience h2 {
+  margin-bottom: 2.5%;
+  font-size: 1.5rem;
+}
+.wrapper .experience .exp-content {
+  margin-bottom: 2.5%;
+}
+.wrapper .experience .exp-content h3 {
+  font-size: 1.3rem;
+}
+.wrapper .skills {
+  border: 1px solid black;
+  padding: 2.5%;
+  margin-bottom: 2.5%;
+}
+.wrapper .skills ul {
+  list-style-type: circle;
+  color: #888;
+}
+.wrapper .skills ul ul {
+  list-style-type: square;
+  padding-left: 2.5%;
+}
+.wrapper .contact-form {
+  border: 1px solid black;
+  padding: 2.5%;
+  margin-bottom: 2.5%;
+  font-size: 1.1rem;
+}
+.wrapper .contact-form input[type=text],
+.wrapper .contact-form select,
+.wrapper .contact-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  margin: 15px 0px;
+  resize: vertical;
+}
+.wrapper .contact-form input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 1% 5%;
+  border: 1px solid black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 auto;
+  font-size: 1em;
+}
+.wrapper .contact-form input[type=submit] :hover {
+  transition: background 0.5s;
+  background-color: black;
+  color: white;
+}
+.wrapper footer {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+}
